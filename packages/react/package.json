@@ -1,0 +1,17 @@
+{
+  "name": "@ds.e/react",
+  "packageManager": "yarn@4.11.0",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@types/react": "^19.2.5",
+    "react": "^19.2.0",
+    "rollup": "^4.53.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "yarn build --watch"
+  }
+}

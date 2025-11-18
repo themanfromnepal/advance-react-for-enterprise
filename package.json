@@ -1,0 +1,24 @@
+{
+  "name": "@ds.e/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^9.0.0"
+  },
+  "private": true,
+  "packageManager": "yarn@4.11.0",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "playgrounds/*"
+    ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "yarn lerna run build",
+    "dev": "lerna run dev --include-dependencies --parallel",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix"
+  }
+}
