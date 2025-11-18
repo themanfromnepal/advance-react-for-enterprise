@@ -5,7 +5,7 @@ interface ColorProps {
 }
 
 const Color: React.FC<ColorProps> = ({ hexCode }) => {
-  return <div style={{ backgroundColor: hexCode }} />;
+  return <div style={{ backgroundColor: hexCode }}></div>;
 };
 
 export default Color;
