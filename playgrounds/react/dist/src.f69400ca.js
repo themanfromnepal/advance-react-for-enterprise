@@ -1115,7 +1115,7 @@ var process = require("process");
   exports.useTransition = function () {
     return resolveDispatcher().useTransition();
   };
-  exports.version = "19.2.0";
+  exports.version = "19.2.3";
   "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 }();
 },{"process":"../../../node_modules/process/browser.js"}],"../../../node_modules/react/index.js":[function(require,module,exports) {
@@ -1574,7 +1574,7 @@ if ("development" === 'production') {
   exports.useFormStatus = function () {
     return resolveDispatcher().useHostTransitionStatus();
   };
-  exports.version = "19.2.0";
+  exports.version = "19.2.3";
   "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 }();
 },{"react":"../../../node_modules/react/index.js"}],"../../../node_modules/react-dom/index.js":[function(require,module,exports) {
@@ -16654,7 +16654,7 @@ var process = require("process");
   };
   (function () {
     var isomorphicReactPackageVersion = React.version;
-    if ("19.2.0" !== isomorphicReactPackageVersion) throw Error('Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.2.0\nLearn more: https://react.dev/warnings/version-mismatch"));
+    if ("19.2.3" !== isomorphicReactPackageVersion) throw Error('Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.2.3\nLearn more: https://react.dev/warnings/version-mismatch"));
   })();
   "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error("React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://react.dev/link/react-polyfills");
   ReactDOMSharedInternals.findDOMNode = function (componentOrElement) {
@@ -16672,10 +16672,10 @@ var process = require("process");
   if (!function () {
     var internals = {
       bundleType: 1,
-      version: "19.2.0",
+      version: "19.2.3",
       rendererPackageName: "react-dom",
       currentDispatcherRef: ReactSharedInternals,
-      reconcilerVersion: "19.2.0"
+      reconcilerVersion: "19.2.3"
     };
     internals.overrideHookState = overrideHookState;
     internals.overrideHookStateDeletePath = overrideHookStateDeletePath;
@@ -16738,7 +16738,7 @@ var process = require("process");
     listenToAllSupportedEvents(container);
     return new ReactDOMHydrationRoot(initialChildren);
   };
-  exports.version = "19.2.0";
+  exports.version = "19.2.3";
   "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 }();
 },{"scheduler":"../../../node_modules/scheduler/index.js","react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","process":"../../../node_modules/process/browser.js"}],"../../../node_modules/react-dom/client.js":[function(require,module,exports) {
@@ -16776,7 +16776,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom-client.development.js');
 }
-},{"./cjs/react-dom-client.development.js":"../../../node_modules/react-dom/cjs/react-dom-client.development.js"}],"../../../node_modules/@ds.e/react/lib/Button-C5WdNgNK.js":[function(require,module,exports) {
+},{"./cjs/react-dom-client.development.js":"../../../node_modules/react-dom/cjs/react-dom-client.development.js"}],"../../../node_modules/@akashalfaris/react/lib/Button-C5WdNgNK.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16793,21 +16793,376 @@ const Button = ({
   }, label, "- Label Here");
 };
 exports.B = Button;
-},{"react":"../../../node_modules/react/index.js"}],"../../../node_modules/@ds.e/react/lib/index.js":[function(require,module,exports) {
+},{"react":"../../../node_modules/react/index.js"}],"../../../node_modules/@akashalfaris/foundation/lib/FontSize.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "default", {
+exports.default = void 0;
+const fontSizes = {
+  xs: "xs",
+  sm: "sm",
+  base: "base",
+  lg: "lg",
+  xl: "xl"
+};
+var _default = exports.default = Object.freeze(fontSizes);
+},{}],"../../../node_modules/@akashalfaris/foundation/lib/Spacing.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+const spaces = {
+  none: "none",
+  xxxs: "xxxs",
+  // 4px
+  xxs: "xxs",
+  // 8px
+  xs: "xs",
+  // 12px
+  sm: "sm",
+  // 16px
+  md: "md",
+  // 24px
+  lg: "lg",
+  // 32px
+  xl: "xl",
+  // 48px
+  xxl: "xxl",
+  // 72px
+  xxxl: "xxxl"
+};
+var _default = exports.default = Object.freeze(spaces);
+},{}],"../../../node_modules/@akashalfaris/foundation/lib/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "FontSize", {
+  enumerable: true,
+  get: function () {
+    return _FontSize.default;
+  }
+});
+Object.defineProperty(exports, "Spacing", {
+  enumerable: true,
+  get: function () {
+    return _Spacing.default;
+  }
+});
+var _FontSize = _interopRequireDefault(require("./FontSize"));
+var _Spacing = _interopRequireDefault(require("./Spacing"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+},{"./FontSize":"../../../node_modules/@akashalfaris/foundation/lib/FontSize.js","./Spacing":"../../../node_modules/@akashalfaris/foundation/lib/Spacing.js"}],"../../../node_modules/@akashalfaris/react/lib/Color-Cmn1nmDA.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.C = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _foundation = require("@akashalfaris/foundation");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+const Color = ({
+  hexCode,
+  width = _foundation.Spacing.sm,
+  height = _foundation.Spacing.sm
+}) => {
+  const className = `dse-width-${width} dse-height-${height}`;
+  return _react.default.createElement("div", {
+    className: className,
+    style: {
+      backgroundColor: hexCode
+    }
+  });
+};
+exports.C = Color;
+},{"react":"../../../node_modules/react/index.js","@akashalfaris/foundation":"../../../node_modules/@akashalfaris/foundation/lib/index.js"}],"../../../node_modules/@akashalfaris/react/lib/Text-DIUDjvih.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.T = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _foundation = require("@akashalfaris/foundation");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+const Text = ({
+  size = _foundation.FontSize.base,
+  children
+}) => {
+  const className = `dse-text dse-text-${size}`;
+  return _react.default.createElement("p", {
+    className: className
+  }, children);
+};
+exports.T = Text;
+},{"react":"../../../node_modules/react/index.js","@akashalfaris/foundation":"../../../node_modules/@akashalfaris/foundation/lib/index.js"}],"../../../node_modules/@akashalfaris/react/lib/Margin-B-H0GNc-.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.M = void 0;
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+const Margin = ({
+  space = "xxxs",
+  children,
+  left,
+  right,
+  top,
+  bottom
+}) => {
+  let className = "";
+  if (!left && !right && !top && !bottom) {
+    className = `dse-margin-${space}`;
+  }
+  if (left) {
+    className = `dse-margin-left-${space}`;
+  } else if (right) {
+    className = `dse-margin-right-${space}`;
+  } else if (top) {
+    className = `dse-margin-top-${space}`;
+  } else if (bottom) {
+    className = `dse-margin-bottom-${space}`;
+  }
+  return _react.default.createElement("div", {
+    className: className
+  }, children);
+};
+exports.M = Margin;
+},{"react":"../../../node_modules/react/index.js"}],"../../../node_modules/@akashalfaris/react/lib/Select-Eu8LLmca.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.S = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _TextDIUDjvih = require("./Text-DIUDjvih.js");
+function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function (e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (const t in e) "default" !== t && {}.hasOwnProperty.call(e, t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, t)) && (i.get || i.set) ? o(f, t, i) : f[t] = e[t]); return f; })(e, t); }
+const KEY_CODES = {
+  ENTER: "Enter",
+  SPACE: " ",
+  DOWN_ARROW: "ArrowDown",
+  ESC: "Escape",
+  UP_ARROW: "ArrowUp"
+};
+const getPreviousOptionIndex = (currentIndex, options) => {
+  if (currentIndex === null) {
+    return 0;
+  }
+  if (currentIndex === 0) {
+    return options.length - 1;
+  }
+  return currentIndex - 1;
+};
+const getNextOptionIndex = (currentIndex, options) => {
+  if (currentIndex === null) {
+    return 0;
+  }
+  if (currentIndex === options.length - 1) {
+    return 0;
+  }
+  return currentIndex + 1;
+};
+const Select = ({
+  options = [],
+  label = "Please select an option ...",
+  onOptionSelected: handler,
+  renderOption
+}) => {
+  const [isOpen, setIsOpen] = (0, _react.useState)(false);
+  const [selectedIndex, setSelectedIndex] = (0, _react.useState)(null);
+  const [highlightedIndex, setHighlightedIndex] = (0, _react.useState)(null);
+  const labelRef = (0, _react.useRef)(null);
+  const [optionRefs, setOptionRefs] = (0, _react.useState)([]);
+  const [overlayTop, setOverlayTop] = (0, _react.useState)(0);
+  const onOptionSelected = (option, optionIndex) => {
+    if (handler) {
+      handler(option, optionIndex);
+    }
+    setSelectedIndex(optionIndex);
+    setIsOpen(false);
+  };
+  const onLabelClick = () => {
+    setIsOpen(!isOpen);
+  };
+  (0, _react.useEffect)(() => {
+    setOverlayTop((labelRef.current?.offsetHeight || 0) + 10);
+  }, [labelRef.current?.offsetHeight]);
+  let selectedOption = null;
+  if (selectedIndex !== null) {
+    selectedOption = options[selectedIndex];
+  }
+  const highlightOption = optionIndex => {
+    setHighlightedIndex(optionIndex);
+  };
+  const onButtonKeyDown = event => {
+    event.preventDefault();
+    if ([KEY_CODES.ENTER, KEY_CODES.SPACE, KEY_CODES.DOWN_ARROW].includes(event.code)) {
+      setIsOpen(true);
+      // set focus on the list item
+      highlightOption(0);
+    }
+    if (event.code === KEY_CODES.ESC) {
+      setIsOpen(false);
+    }
+  };
+  (0, _react.useEffect)(() => {
+    setOptionRefs(options.map(() => (0, _react.createRef)()));
+  }, [options.length]);
+  (0, _react.useEffect)(() => {
+    if (highlightedIndex !== null && isOpen) {
+      const ref = optionRefs[highlightedIndex];
+      if (ref && ref.current) {
+        ref.current.focus();
+      }
+    }
+  }, [isOpen, highlightedIndex]);
+  const onOptionKeyDown = event => {
+    if (event.code === KEY_CODES.ESC) {
+      setIsOpen(false);
+      return;
+    }
+    if (event.code === KEY_CODES.DOWN_ARROW) {
+      highlightOption(getNextOptionIndex(highlightedIndex, options));
+    }
+    if (event.code === KEY_CODES.UP_ARROW) {
+      highlightOption(getPreviousOptionIndex(highlightedIndex, options));
+    }
+    if (event.code === KEY_CODES.ENTER) {
+      onOptionSelected(options[highlightedIndex], highlightedIndex);
+    }
+  };
+  return _react.default.createElement("div", {
+    className: "dse-select"
+  }, _react.default.createElement("button", {
+    "data-testid": "DseSelectButton",
+    onKeyDown: onButtonKeyDown,
+    "aria-controls": isOpen ? "dse-select-list" : undefined,
+    "aria-haspopup": true,
+    "aria-expanded": isOpen,
+    ref: labelRef,
+    className: "dse-select__label",
+    onClick: () => onLabelClick()
+  }, _react.default.createElement(_TextDIUDjvih.T, null, selectedOption === null ? label : selectedOption.label), _react.default.createElement("svg", {
+    className: `dse-select__caret ${isOpen ? "dse-select__caret--open" : "dse-select__caret--closed"}`,
+    width: "1rem",
+    height: "1rem",
+    fill: "none",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    viewBox: "0 0 24 24",
+    stroke: "currentColor"
+  }, _react.default.createElement("path", {
+    d: "M19 9l-7 7-7-7"
+  }))), _react.default.createElement("ul", {
+    role: "menu",
+    "aria-hidden": !isOpen,
+    id: "dse-select-list",
+    style: {
+      top: overlayTop
+    },
+    className: `dse-select__overlay ${isOpen ? "dse-select__overlay--open" : ""}`
+  }, options.map((option, optionIndex) => {
+    const isSelected = selectedIndex === optionIndex;
+    const isHighlighted = highlightedIndex === optionIndex;
+    const ref = optionRefs[optionIndex];
+    const renderOptionProps = {
+      ref,
+      option,
+      isSelected,
+      getOptionRecommendedProps: (overrideProps = {}) => {
+        return {
+          ref,
+          role: "menuitemradio",
+          "aria-label": option.label,
+          "aria-checked": isSelected ? true : undefined,
+          onKeyDown: onOptionKeyDown,
+          tabIndex: isHighlighted ? -1 : 0,
+          onMouseEnter: () => highlightOption(optionIndex),
+          onMouseLeave: () => highlightOption(null),
+          className: `dse-select__option
+                                ${isSelected ? "dse-select__option--selected" : ""}
+                                ${isHighlighted ? "dse-select__option--highlighted" : ""}
+                            `,
+          key: optionIndex,
+          onClick: () => onOptionSelected(option, optionIndex),
+          ...overrideProps
+        };
+      }
+    };
+    if (renderOption) {
+      return renderOption(renderOptionProps);
+    }
+    return _react.default.createElement("li", {
+      ...renderOptionProps.getOptionRecommendedProps()
+    }, _react.default.createElement(_TextDIUDjvih.T, null, option.label), isSelected ? _react.default.createElement("svg", {
+      width: "1rem",
+      height: "1rem",
+      fill: "none",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeWidth: 2,
+      viewBox: "0 0 24 24",
+      stroke: "currentColor"
+    }, _react.default.createElement("path", {
+      d: "M5 13l4 4L19 7"
+    })) : null);
+  })));
+};
+exports.S = Select;
+},{"react":"../../../node_modules/react/index.js","./Text-DIUDjvih.js":"../../../node_modules/@akashalfaris/react/lib/Text-DIUDjvih.js"}],"../../../node_modules/@akashalfaris/react/lib/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function () {
     return _ButtonC5WdNgNK.B;
   }
 });
+Object.defineProperty(exports, "Color", {
+  enumerable: true,
+  get: function () {
+    return _ColorCmn1nmDA.C;
+  }
+});
+Object.defineProperty(exports, "Margin", {
+  enumerable: true,
+  get: function () {
+    return _MarginBH0GNc.M;
+  }
+});
+Object.defineProperty(exports, "Select", {
+  enumerable: true,
+  get: function () {
+    return _SelectEu8LLmca.S;
+  }
+});
+Object.defineProperty(exports, "Text", {
+  enumerable: true,
+  get: function () {
+    return _TextDIUDjvih.T;
+  }
+});
 var _ButtonC5WdNgNK = require("./Button-C5WdNgNK.js");
+var _ColorCmn1nmDA = require("./Color-Cmn1nmDA.js");
+var _TextDIUDjvih = require("./Text-DIUDjvih.js");
+var _MarginBH0GNc = require("./Margin-B-H0GNc-.js");
+var _SelectEu8LLmca = require("./Select-Eu8LLmca.js");
 require("react");
-},{"./Button-C5WdNgNK.js":"../../../node_modules/@ds.e/react/lib/Button-C5WdNgNK.js","react":"../../../node_modules/react/index.js"}],"../../../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+require("@akashalfaris/foundation");
+},{"./Button-C5WdNgNK.js":"../../../node_modules/@akashalfaris/react/lib/Button-C5WdNgNK.js","./Color-Cmn1nmDA.js":"../../../node_modules/@akashalfaris/react/lib/Color-Cmn1nmDA.js","./Text-DIUDjvih.js":"../../../node_modules/@akashalfaris/react/lib/Text-DIUDjvih.js","./Margin-B-H0GNc-.js":"../../../node_modules/@akashalfaris/react/lib/Margin-B-H0GNc-.js","./Select-Eu8LLmca.js":"../../../node_modules/@akashalfaris/react/lib/Select-Eu8LLmca.js","react":"../../../node_modules/react/index.js","@akashalfaris/foundation":"../../../node_modules/@akashalfaris/foundation/lib/index.js"}],"../../../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -16858,7 +17213,37 @@ function reloadCSS() {
   }, 50);
 }
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../node_modules/@ds.e/scss/lib/Button.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../node_modules/@akashalfaris/scss/lib/Button.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":"../../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../node_modules/@akashalfaris/scss/lib/Utilities.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":"../../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../node_modules/@akashalfaris/scss/lib/Text.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":"../../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../node_modules/@akashalfaris/scss/lib/Margin.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":"../../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../node_modules/@akashalfaris/scss/lib/global.css":[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":"../../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../node_modules/@akashalfaris/scss/lib/Select.css":[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -16869,17 +17254,39 @@ module.exports = reloadCSS;
 
 var _react = _interopRequireDefault(require("react"));
 var _client = require("react-dom/client");
-var _react2 = require("@ds.e/react");
-require("@ds.e/scss/lib/Button.css");
+var _react2 = require("@akashalfaris/react");
+require("@akashalfaris/scss/lib/Button.css");
+require("@akashalfaris/scss/lib/Utilities.css");
+require("@akashalfaris/scss/lib/Text.css");
+require("@akashalfaris/scss/lib/Margin.css");
+require("@akashalfaris/scss/lib/global.css");
+require("@akashalfaris/scss/lib/Select.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 // #region --- Internal Imports ---
 
 // #endregion --- Internal Imports ---
+var options = [{
+  label: "Strict Black",
+  value: "strict-black"
+}, {
+  label: "Heavenly Green",
+  value: "heavenly-green"
+}, {
+  label: "Sweet Pink",
+  value: "pink"
+}];
 var root = (0, _client.createRoot)(document.getElementById("root"));
-root.render(_react.default.createElement(_react2.Button, {
-  label: "Hello"
-}));
-},{"react":"../../../node_modules/react/index.js","react-dom/client":"../../../node_modules/react-dom/client.js","@ds.e/react":"../../../node_modules/@ds.e/react/lib/index.js","@ds.e/scss/lib/Button.css":"../../../node_modules/@ds.e/scss/lib/Button.css"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+root.render(_react.default.createElement("div", {
+  style: {
+    display: "flex",
+    gap: "16px",
+    alignItems: "center",
+    padding: "16px"
+  }
+}, _react.default.createElement(_react2.Select, {
+  options: options
+})));
+},{"react":"../../../node_modules/react/index.js","react-dom/client":"../../../node_modules/react-dom/client.js","@akashalfaris/react":"../../../node_modules/@akashalfaris/react/lib/index.js","@akashalfaris/scss/lib/Button.css":"../../../node_modules/@akashalfaris/scss/lib/Button.css","@akashalfaris/scss/lib/Utilities.css":"../../../node_modules/@akashalfaris/scss/lib/Utilities.css","@akashalfaris/scss/lib/Text.css":"../../../node_modules/@akashalfaris/scss/lib/Text.css","@akashalfaris/scss/lib/Margin.css":"../../../node_modules/@akashalfaris/scss/lib/Margin.css","@akashalfaris/scss/lib/global.css":"../../../node_modules/@akashalfaris/scss/lib/global.css","@akashalfaris/scss/lib/Select.css":"../../../node_modules/@akashalfaris/scss/lib/Select.css"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -16904,7 +17311,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53599" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54852" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

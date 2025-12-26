@@ -1,0 +1,22 @@
+{
+  "name": "@akashalfaris/foundation",
+  "packageManager": "yarn@4.11.0",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
+    "@types/babel__preset-env": "^7",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.2.7",
+    "jest": "^30.2.0",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "yarn build --watch",
+    "test": "jest --verbose"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

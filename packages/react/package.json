@@ -1,17 +1,52 @@
 {
-  "name": "@ds.e/react",
+  "name": "@akashalfaris/react",
   "packageManager": "yarn@4.11.0",
   "version": "1.0.0",
   "main": "lib/index.js",
   "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
+    "@storybook/addon-a11y": "^10.1.10",
+    "@storybook/addon-docs": "^10.1.10",
+    "@storybook/addon-onboarding": "^10.1.10",
+    "@storybook/addon-storysource": "8.6.14",
+    "@storybook/addon-webpack5-compiler-swc": "^4.0.2",
+    "@storybook/cli": "^10.1.10",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react-webpack5": "^10.1.10",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/babel__core": "^7",
+    "@types/babel__preset-env": "^7",
+    "@types/jest": "^30.0.0",
     "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "babel-loader": "^10.0.0",
+    "chromatic": "^13.3.4",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "rollup": "^4.53.2",
     "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "^5.9.3"
+    "storybook": "^10.1.10",
+    "typescript": "^5.9.3",
+    "webpack": "^5.104.1"
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "yarn build --watch"
+    "dev": "yarn build --watch",
+    "test": "jest --verbose",
+    "test:watch": "yarn test --watch",
+    "start-storybook": "yarn storybook",
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006",
+    "chromatic": "chromatic --project-token=chpt_989f0f55b763b6a"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
