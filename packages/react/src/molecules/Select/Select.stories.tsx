@@ -2,7 +2,7 @@ import React from "react";
 import Select from "./Select";
 
 //css
-import "@akashalfaris/scss/lib/Select.css";
+import "@akashalmujahidaljabali/scss/lib/Select.css";
 
 export default {
   title: "Molecules/Select", // Use "/" for grouping

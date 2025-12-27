@@ -1,8 +1,6 @@
-export { B as Button } from './Button-C5WdNgNK.js';
-export { C as Color } from './Color-Cmn1nmDA.js';
-export { T as Text } from './Text-DIUDjvih.js';
-export { M as Margin } from './Margin-B-H0GNc-.js';
-export { S as Select } from './Select-Eu8LLmca.js';
-import 'react';
-import '@akashalfaris/foundation';
+export { default as Button } from './atoms/Button/Button.js';
+export { default as Color } from './atoms/Color/Color.js';
+export { default as Text } from './atoms/Text/Text.js';
+export { default as Margin } from './atoms/Margin/Margin.js';
+export { default as Select } from './molecules/Select/Select.js';
 //# sourceMappingURL=index.js.map

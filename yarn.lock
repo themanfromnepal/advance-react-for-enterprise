@@ -12,17 +12,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@akashalfaris/core@workspace:.":
+"@akashalmujahidaljabali/core@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@akashalfaris/core@workspace:."
+  resolution: "@akashalmujahidaljabali/core@workspace:."
   dependencies:
     lerna: "npm:^9.0.0"
   languageName: unknown
   linkType: soft
 
-"@akashalfaris/foundation@workspace:packages/foundation":
+"@akashalmujahidaljabali/foundation@workspace:packages/foundation":
   version: 0.0.0-use.local
-  resolution: "@akashalfaris/foundation@workspace:packages/foundation"
+  resolution: "@akashalmujahidaljabali/foundation@workspace:packages/foundation"
   dependencies:
     "@babel/preset-env": "npm:^7.28.5"
     "@babel/preset-typescript": "npm:^7.28.5"
@@ -34,9 +34,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@akashalfaris/react@workspace:^, @akashalfaris/react@workspace:packages/react":
+"@akashalmujahidaljabali/react@workspace:^, @akashalmujahidaljabali/react@workspace:packages/react":
   version: 0.0.0-use.local
-  resolution: "@akashalfaris/react@workspace:packages/react"
+  resolution: "@akashalmujahidaljabali/react@workspace:packages/react"
   dependencies:
     "@babel/core": "npm:^7.28.5"
     "@babel/preset-env": "npm:^7.28.5"
@@ -72,9 +72,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@akashalfaris/scss@workspace:^, @akashalfaris/scss@workspace:packages/scss":
+"@akashalmujahidaljabali/scss@workspace:^, @akashalmujahidaljabali/scss@workspace:packages/scss":
   version: 0.0.0-use.local
-  resolution: "@akashalfaris/scss@workspace:packages/scss"
+  resolution: "@akashalmujahidaljabali/scss@workspace:packages/scss"
   dependencies:
     husky: "npm:^4.2.5"
     lint-staged: "npm:^10.2.11"
@@ -3340,8 +3340,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@playgrounds/react@workspace:playgrounds/react"
   dependencies:
-    "@akashalfaris/react": "workspace:^"
-    "@akashalfaris/scss": "workspace:^"
+    "@akashalmujahidaljabali/react": "workspace:^"
+    "@akashalmujahidaljabali/scss": "workspace:^"
     "@types/react": "npm:^19.2.5"
     "@types/react-dom": "npm:^19.2.3"
     parcel-bundler: "npm:^1.12.4"

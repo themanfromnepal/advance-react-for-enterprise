@@ -1,5 +1,5 @@
 import React from "react";
-import { FontSize } from "@akashalfaris/foundation";
+import { FontSize } from "@akashalmujahidaljabali/foundation";
 export interface TextProps {
     size?: keyof typeof FontSize;
     children: React.ReactNode;

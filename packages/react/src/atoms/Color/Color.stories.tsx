@@ -1,8 +1,8 @@
 import Color from "./Color";
 import React from "react";
-import { Spacing } from "@akashalfaris/foundation";
+import { Spacing } from "@akashalmujahidaljabali/foundation";
 
-import "@akashalfaris/scss/lib/Utilities.css";
+import "@akashalmujahidaljabali/scss/lib/Utilities.css";
 
 export default {
   title: "Atoms/Color", // Use "/" for grouping

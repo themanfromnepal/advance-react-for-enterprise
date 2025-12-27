@@ -2,13 +2,19 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 
 // #region --- Internal Imports ---
-import { Button, Color, Text, Margin, Select } from "@akashalfaris/react";
-import "@akashalfaris/scss/lib/Button.css";
-import "@akashalfaris/scss/lib/Utilities.css";
-import "@akashalfaris/scss/lib/Text.css";
-import "@akashalfaris/scss/lib/Margin.css";
-import "@akashalfaris/scss/lib/global.css";
-import "@akashalfaris/scss/lib/Select.css";
+import {
+  Button,
+  Color,
+  Text,
+  Margin,
+  Select,
+} from "@akashalmujahidaljabali/react";
+import "@akashalmujahidaljabali/scss/lib/Button.css";
+import "@akashalmujahidaljabali/scss/lib/Utilities.css";
+import "@akashalmujahidaljabali/scss/lib/Text.css";
+import "@akashalmujahidaljabali/scss/lib/Margin.css";
+import "@akashalmujahidaljabali/scss/lib/global.css";
+import "@akashalmujahidaljabali/scss/lib/Select.css";
 
 // #endregion --- Internal Imports ---
 

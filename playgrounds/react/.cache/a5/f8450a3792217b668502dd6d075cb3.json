@@ -1,1 +1,39 @@
-{"id":"../../../node_modules/@akashalfaris/react/lib/Text-DIUDjvih.js","dependencies":[{"name":"C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalfaris\\react\\lib\\Text-DIUDjvih.js.map","includedInParent":true,"mtime":1766790638184},{"name":"C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\playgrounds\\react\\package.json","includedInParent":true,"mtime":1766489788855},{"name":"C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalfaris\\react\\package.json","includedInParent":true,"mtime":1766489575308},{"name":"react","loc":{"line":1,"column":18,"index":18},"parent":"C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalfaris\\react\\lib\\Text-DIUDjvih.js","resolved":"C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\react\\index.js"},{"name":"@akashalfaris/foundation","loc":{"line":2,"column":25,"index":52},"parent":"C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalfaris\\react\\lib\\Text-DIUDjvih.js","resolved":"C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalfaris\\foundation\\lib\\index.js"}],"generated":{"js":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.T = void 0;\nvar _react = _interopRequireDefault(require(\"react\"));\nvar _foundation = require(\"@akashalfaris/foundation\");\nfunction _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }\nconst Text = ({\n  size = _foundation.FontSize.base,\n  children\n}) => {\n  const className = `dse-text dse-text-${size}`;\n  return _react.default.createElement(\"p\", {\n    className: className\n  }, children);\n};\nexports.T = Text;"},"sourceMaps":{"js":{"mappings":[],"sources":{},"lineCount":null}},"error":null,"hash":"3df0180f24600398717aa588dd0d4346","cacheData":{"env":{}}}
+{
+  "id": "../../../node_modules/@akashalmujahidaljabali/react/lib/Text-DIUDjvih.js",
+  "dependencies": [
+    {
+      "name": "C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalmujahidaljabali\\react\\lib\\Text-DIUDjvih.js.map",
+      "includedInParent": true,
+      "mtime": 1766790638184
+    },
+    {
+      "name": "C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\playgrounds\\react\\package.json",
+      "includedInParent": true,
+      "mtime": 1766489788855
+    },
+    {
+      "name": "C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalmujahidaljabali\\react\\package.json",
+      "includedInParent": true,
+      "mtime": 1766489575308
+    },
+    {
+      "name": "react",
+      "loc": { "line": 1, "column": 18, "index": 18 },
+      "parent": "C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalmujahidaljabali\\react\\lib\\Text-DIUDjvih.js",
+      "resolved": "C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\react\\index.js"
+    },
+    {
+      "name": "@akashalmujahidaljabali/foundation",
+      "loc": { "line": 2, "column": 25, "index": 52 },
+      "parent": "C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalmujahidaljabali\\react\\lib\\Text-DIUDjvih.js",
+      "resolved": "C:\\Users\\akash.phago\\Desktop\\akash\\study\\advanced-react\\advanced-react-for-enterprise\\node_modules\\@akashalmujahidaljabali\\foundation\\lib\\index.js"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.T = void 0;\nvar _react = _interopRequireDefault(require(\"react\"));\nvar _foundation = require(\"@akashalmujahidaljabali/foundation\");\nfunction _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }\nconst Text = ({\n  size = _foundation.FontSize.base,\n  children\n}) => {\n  const className = `dse-text dse-text-${size}`;\n  return _react.default.createElement(\"p\", {\n    className: className\n  }, children);\n};\nexports.T = Text;"
+  },
+  "sourceMaps": { "js": { "mappings": [], "sources": {}, "lineCount": null } },
+  "error": null,
+  "hash": "3df0180f24600398717aa588dd0d4346",
+  "cacheData": { "env": {} }
+}

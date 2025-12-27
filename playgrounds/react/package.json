@@ -16,8 +16,8 @@
     "dev": "parcel src/index.html -p 3000"
   },
   "dependencies": {
-    "@akashalfaris/react": "workspace:^",
-    "@akashalfaris/scss": "workspace:^"
+    "@akashalmujahidaljabali/react": "workspace:^",
+    "@akashalmujahidaljabali/scss": "workspace:^"
   },
   "private": true
 }

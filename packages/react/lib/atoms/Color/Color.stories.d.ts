@@ -1,6 +1,6 @@
 import React from "react";
-import { Spacing } from "@akashalfaris/foundation";
-import "@akashalfaris/scss/lib/Utilities.css";
+import { Spacing } from "@akashalmujahidaljabali/foundation";
+import "@akashalmujahidaljabali/scss/lib/Utilities.css";
 declare const _default: {
     title: string;
     component: React.FC<import("./Color").ColorProps>;

@@ -1,5 +1,5 @@
 import React from "react";
-import "@akashalfaris/scss/lib/Select.css";
+import "@akashalmujahidaljabali/scss/lib/Select.css";
 declare const _default: {
     title: string;
 };

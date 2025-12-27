@@ -8,6 +8,6 @@
     "jsx": "react", // or "react-jsx" for React 17+
     "types": ["@types/react", "@types/jest"] // Ensure React types are included
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "lib"]
 }

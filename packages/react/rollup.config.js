@@ -13,8 +13,9 @@ export default {
     dir: "lib",
     format: "esm",
     sourcemap: true,
+    preserveModules: true, // Replace this line
   },
   plugins: [Ts()],
-  preserveModules: true,
-  external: ["react", "@akashalfaris/foundation"],
+  preserveEntrySignatures: "strict", // Add this line
+  external: ["react", "@akashalmujahidaljabali/foundation"],
 };

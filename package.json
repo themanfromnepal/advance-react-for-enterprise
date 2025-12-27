@@ -1,5 +1,5 @@
 {
-  "name": "@akashalfaris/core",
+  "name": "@akashalmujahidaljabali/core",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "dev": "lerna run dev --include-dependencies --parallel",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
-    "test": "yarn lerna run test"
+    "test": "yarn lerna run test",
+    "publish": "yarn test && yarn build && yarn lerna publish"
   }
 }
