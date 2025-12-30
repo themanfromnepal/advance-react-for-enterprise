@@ -1,20 +1,7 @@
-44 error Error: Command failed with exit code 1: corepack yarn install --mode update-lockfile
-44 error ➤ YN0000: · Yarn 4.11.0
-44 error ➤ YN0000: ┌ Resolution step
-44 error ➤ YN0001: │ Error: @akashalmujahidaljabali/scss@workspace:^: Workspace not found (@akashalmujahidaljabali/scss@workspace:^)
-44 error     at t.getWorkspaceByDescriptor (C:\Users\akash.phago\AppData\Local\node\corepack\v1\yarn\4.11.0\yarn.js:209:3520)
-44 error     at t.getCandidates (C:\Users\akash.phago\AppData\Local\node\corepack\v1\yarn\4.11.0\yarn.js:140:109683)
-44 error     at rm.getCandidates (C:\Users\akash.phago\AppData\Local\node\corepack\v1\yarn\4.11.0\yarn.js:141:1311)
-44 error     at rm.getCandidates (C:\Users\akash.phago\AppData\Local\node\corepack\v1\yarn\4.11.0\yarn.js:141:1311)
-44 error     at C:\Users\akash.phago\AppData\Local\node\corepack\v1\yarn\4.11.0\yarn.js:209:8420
-44 error     at qE (C:\Users\akash.phago\AppData\Local\node\corepack\v1\yarn\4.11.0\yarn.js:140:45054)
-44 error     at mt (C:\Users\akash.phago\AppData\Local\node\corepack\v1\yarn\4.11.0\yarn.js:209:8400)
-44 error     at async Promise.allSettled (index 1)
-44 error     at async Uu (C:\Users\akash.phago\AppData\Local\node\corepack\v1\yarn\4.11.0\yarn.js:140:44382)
-44 error ➤ YN0000: └ Completed in 0s 621ms
-44 error ➤ YN0000: · Failed with errors in 0s 643ms
-44 error     at makeError (C:\Users\akash.phago\Desktop\akash\study\advanced-react\advanced-react-for-enterprise\node_modules\execa\lib\error.js:59:11)
-44 error     at handlePromise (C:\Users\akash.phago\Desktop\akash\study\advanced-react\advanced-react-for-enterprise\node_modules\execa\index.js:114:26)
-44 error     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-44 error     at async VersionCommand.updatePackageVersions (C:\Users\akash.phago\Desktop\akash\study\advanced-react\advanced-react-for-enterprise\node_modules\lerna\dist\index.js:10353:13)
-44 error     at async Promise.all (index 0)
+45 error Error: Command failed with exit code 128: git add -- packages/scss/package.json packages/react/package.json packages/foundation/package.json playgrounds/react/package.json lerna.json yarn.lock
+45 error fatal: Pathspec 'packages/scss/package.json' is in submodule 'packages/scss'
+45 error     at makeError (C:\Users\akash.phago\Desktop\akash\study\advanced-react\advanced-react-for-enterprise\node_modules\execa\lib\error.js:59:11)
+45 error     at handlePromise (C:\Users\akash.phago\Desktop\akash\study\advanced-react\advanced-react-for-enterprise\node_modules\execa\index.js:114:26)
+45 error     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+45 error     at async VersionCommand.updatePackageVersions (C:\Users\akash.phago\Desktop\akash\study\advanced-react\advanced-react-for-enterprise\node_modules\lerna\dist\index.js:10382:11)
+45 error     at async Promise.all (index 0)
