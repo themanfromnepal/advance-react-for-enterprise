@@ -2,7 +2,7 @@
   "name": "@akashalmujahidaljabali/react",
   "type": "module",
   "packageManager": "yarn@4.11.0",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "lib/index.js",
   "devDependencies": {
     "@babel/core": "^7.28.5",

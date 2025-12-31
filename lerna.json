@@ -1,7 +1,9 @@
 {
-  "version": "0.1.6",
+  "version": "0.1.7",
   "npmClient": "yarn",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "stream": true,
   "command": {
     "publish": {
