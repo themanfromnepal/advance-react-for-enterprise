@@ -1,7 +1,10 @@
 {
-  "version": "0.1.8",
+  "version": "0.1.9",
   "npmClient": "yarn",
-  "packages": ["packages/*", "playgrounds/*"],
+  "packages": [
+    "packages/*",
+    "playgrounds/*"
+  ],
   "stream": true,
   "command": {
     "publish": {
