@@ -1,6 +1,5 @@
 {
   "name": "@akashalmujahidaljabali/react",
-  "type": "module",
   "packageManager": "yarn@4.11.0",
   "version": "0.1.14",
   "main": "lib/index.js",
@@ -50,5 +49,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e5f6cfaf7eef6581342940136dae2d3004393885"
+  "gitHead": "2c651ffe4f69ae6584ac5e4d0d78b416609338e9"
 }

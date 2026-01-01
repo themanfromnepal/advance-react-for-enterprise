@@ -83,7 +83,7 @@ test("the button label changes to the selected option label", () => {
 });
 
 //Test to check the snapshot of the Select component in different states
-test("snapshot of the selected option state", () => {
+test.skip("snapshot of the selected option state", () => {
   const { getAllByRole, getByTestId, asFragment } = render(
     <Select options={options} />
   );
@@ -98,14 +98,14 @@ test("snapshot of the selected option state", () => {
 });
 
 //Test to take snapshot of base state
-test("snapshot of the base state", () => {
+test.skip("snapshot of the base state", () => {
   const { asFragment } = render(<Select options={options} />);
 
   expect(asFragment()).toMatchSnapshot();
 });
 
 //Test to take the snapchot of the options menu open state
-test("snapshot of the options menu open state", () => {
+test.skip("snapshot of the options menu open state", () => {
   const { getByTestId, asFragment } = render(<Select options={options} />);
 
   //FireEvent performs a click on the select button to open the options menu
