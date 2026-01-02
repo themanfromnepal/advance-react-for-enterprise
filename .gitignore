@@ -1,3 +1,11 @@
 node_modules/
 *storybook.log
 storybook-static
+# Ignore all .cache folders
+.cache/
+
+# Exclude (include) .cache folders in any directory
+!**/.cache/
+
+lib/
+**/lib/
