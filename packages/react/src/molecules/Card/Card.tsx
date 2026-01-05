@@ -66,7 +66,7 @@ const getNextOptionIndex = (
 
 const Card: React.FunctionComponent<SelectProps> = ({
   options = [],
-  label = "Please select an option ...",
+  label = "Please select...",
   onOptionSelected: handler,
   renderOption,
 }) => {
