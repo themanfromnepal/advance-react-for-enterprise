@@ -1,9 +1,11 @@
 {
   "version": "0.1.16",
   "npmClient": "yarn",
-  "packages": [
-    "packages/*",
-    "playgrounds/*"
-  ],
-  "stream": true
+  "packages": ["packages/*", "playgrounds/*"],
+  "stream": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    }
+  }
 }
