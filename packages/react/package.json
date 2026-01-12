@@ -1,5 +1,6 @@
 {
   "name": "@akashalmujahidaljabali/react",
+  "type": "module",
   "packageManager": "yarn@4.11.0",
   "version": "0.2.0",
   "main": "lib/index.js",
