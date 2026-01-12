@@ -1,0 +1,7 @@
+@use "../foundation/all" as *;
+
+.dse-card {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
