@@ -8,4 +8,4 @@ storybook-static
 !**/.cache/
 
 lib/
-**/lib/
+!**/lib/

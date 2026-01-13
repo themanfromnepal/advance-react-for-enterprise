@@ -2,6 +2,7 @@
   "name": "@akashalmujahidaljabali/foundation",
   "version": "0.2.0",
   "main": "lib/index.js",
+  "type": "module",
   "files": [
     "lib"
   ],
