@@ -16,6 +16,8 @@ jobs:
       matrix:
         node-version: [18.x]
 
+    environment: dev # Specify the environment here
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -32,5 +34,4 @@ jobs:
       - name: Visual Regression Tests
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-
         run: yarn test:chromatic
