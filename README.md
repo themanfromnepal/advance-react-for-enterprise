@@ -4,7 +4,6 @@ This monorepo contains multiple packages and playgrounds for building and testin
 
 ## Packages
 
-- [@akashalmujahidaljabali/core](packages/core/README.md): Core utilities and configurations for the monorepo.
 - [@akashalmujahidaljabali/foundation](packages/foundation/README.md): Foundational utilities and shared code.
 - [@akashalmujahidaljabali/react](packages/react/README.md): React components and widgets.
 - [@akashalmujahidaljabali/scss](packages/scss/README.md): SCSS utilities and styles.
