@@ -16,7 +16,7 @@ jobs:
       matrix:
         node-version: [18.x]
 
-    environment: dev # Specify the environment here
+    environment: dev
 
     steps:
       - name: Checkout repository
@@ -30,6 +30,16 @@ jobs:
 
       - name: Automated tests
         run: yarn test
+
+      - name: Debug Environment Variables
+        run: |
+          if [ -z "${{ secrets.CHROMATIC_PROJECT_TOKEN }}" ]; then
+            echo "CHROMATIC_PROJECT_TOKEN is not set or empty. ${{ secrets.CHROMATIC_PROJECT_TOKEN }}"
+            exit 1
+          else
+            echo "CHROMATIC_PROJECT_TOKEN is set."
+          fi
+        shell: bash
 
       - name: Visual Regression Tests
         env:
